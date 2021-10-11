@@ -1,6 +1,6 @@
 import pyautogui
 import time
-
+import sys
 
 def main():
 
@@ -9,8 +9,10 @@ def main():
 
 
     print("Starting", end="")
+    sys.stdout.flush()
     for i in range(0, 5):
         print(".", end="")
+        sys.stdout.flush()
         time.sleep(1)
     print("Go")
 
